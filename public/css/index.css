@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  *{
+    font-family: Iransans;
+  }
+  /***********HEADER************/
+  nav > a,
+  nav > div > a {
+    @apply text-white text-[14px] py-3 px-7 border-white md:px-4 lg:text-[16px] lg:border-l-[1px] lg:py-1;
+  }
+  nav > a:hover {
+    @apply opacity-90;
+  }
+  nav > a:last-child {
+    @apply border-0;
+  }
+}
+#nav {
+  display: none;
+}
+#nav:checked + nav {
+  height: 360px;
+}
+.social1 {
+  background-image: url(./images/1.png);
+}
+.social2 {
+  background-image: url(./images/2.png);
+}
+.social3 {
+  background-image: url(./images/3.png);
+}
+.social4 {
+  background-image: url(./images/4.png);
+}
+.social5 {
+  background-image: url(./images/5.png);
+}
+.social6 {
+  background-image: url(./images/6.png);
+}
+
+.between__bg {
+  background-image: url(./images/bg-main.png);
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+ @font-face {
+  font-family: Iransans;
+  src: url(../fonts/IRANSans.eot);
+  src: url(../fonts/IRANSans.ttf);
+  src: url(../fonts/IRANSans.woff);
+  src: url(../fonts/IRANSans.woff2);
+ }
